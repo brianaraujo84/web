@@ -1,0 +1,7 @@
+const ERROR_EMAIL_EXIST = 40028;
+const ERROR_PHONE_EXIST = 40027;
+
+export default {
+  ERROR_EMAIL_EXIST,
+  ERROR_PHONE_EXIST
+};

@@ -1,0 +1,413 @@
+.badgeContainer {
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+}
+.badgeHeader {
+  font-size: 6rem !important;
+  font-weight: 600 !important;
+}
+.middleSection {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+}
+.badgeImage {
+  width: 460px !important;
+  margin-left: 70px !important;
+}
+.eventCompletedOnText {
+  margin-top: -3rem !important;
+  font-size: 1.6rem !important;
+  font-weight: 850 !important;
+}
+.auditedDate {
+  margin-top: -0.5rem !important;
+  font-size: 2.4rem !important;
+  font-weight: 600 !important;
+}
+.eventNextScheduledFor {
+  margin-top: -0.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+.nextAuditDate {
+  margin-top: -0.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+.footerContainer {
+  height: 20vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  max-width: 700px !important;
+  margin: auto !important;
+}
+
+.templateFooter {
+  font-weight: 200 !important;
+  font-size: 1.5rem !important;
+}
+
+.confidenceNumber {
+  font-weight: 600 !important;
+  font-size: 2rem !important;
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .badgeContainer {
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+  }
+.badgeHeader {
+  font-size: 2.25rem !important;
+  font-weight: 600 !important;
+}
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.badgeImage {
+  width: 172.5px !important;
+  margin-left: 25px !important;
+}
+.eventCompletedOnText {
+  margin-top: -1.13rem !important;
+  font-size: 0.9rem !important;
+  font-weight: 850 !important;
+}
+.auditedDate {
+  margin-top: -0.19rem !important;
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+}
+.eventNextScheduledFor {
+  margin-top: -0.19rem !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+}
+.nextAuditDate {
+  margin-top: -0.19rem !important;
+  font-size: 0.86rem !important;
+  font-weight: 500 !important;
+}
+.footerContainer {
+  height: 20vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  max-width: 700px !important;
+  margin: auto !important;
+}
+
+.templateFooter {
+  font-weight: 200 !important;
+  font-size: 0.68rem !important;
+}
+
+.confidenceNumber {
+  font-weight: 600 !important;
+  font-size: 1.125rem !important;
+} 
+}
+@media (min-width: 321px) and (max-width: 567px) {
+  .badgeContainer {
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+  }
+.badgeHeader {
+  font-size: 2.9rem !important;
+  font-weight: 600 !important;
+}
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.badgeImage {
+  width: 224.25px !important;
+  margin-left: 32.5px !important;
+}
+.eventCompletedOnText {
+  margin-top: -1.47rem !important;
+  font-size: 1.17rem !important;
+  font-weight: 850 !important;
+}
+.auditedDate {
+  margin-top: -0.25rem !important;
+  font-size: 1.76rem !important;
+  font-weight: 600 !important;
+}
+.eventNextScheduledFor {
+  margin-top: -0.25rem !important;
+  font-size: 1.12rem !important;
+  font-weight: 500 !important;
+}
+.nextAuditDate {
+  margin-top: -0.25rem !important;
+  font-size: 1.12rem !important;
+  font-weight: 500 !important;
+}
+.footerContainer {
+  height: 20vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  max-width: 700px !important;
+  margin: auto !important;
+}
+
+.templateFooter {
+  font-weight: 200 !important;
+  font-size: 0.88rem !important;
+}
+
+.confidenceNumber {
+  font-weight: 600 !important;
+  font-size: 1.46rem !important;
+} 
+}
+@media (min-width: 568px) and (max-width: 767px) {
+.badgeContainer {
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+}
+.badgeHeader {
+  font-size: 4.5rem !important;
+  font-weight: 600 !important;
+}
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.badgeImage {
+  width: 345px !important;
+  margin-left: 52px !important;
+}
+.eventCompletedOnText {
+  margin-top: -2.25rem !important;
+  font-size: 1.2rem !important;
+  font-weight: 850 !important;
+}
+.auditedDate {
+  margin-top: -0.38rem !important;
+  font-size: 1.8rem !important;
+  font-weight: 600 !important;
+}
+.eventNextScheduledFor {
+  margin-top: -0.38rem !important;
+  font-size: 1.13rem !important;
+  font-weight: 500 !important;
+}
+.nextAuditDate {
+  margin-top: -0.38rem !important;
+  font-size: 1.13rem !important;
+  font-weight: 500 !important;
+}
+.footerContainer {
+  height: 20vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  max-width: 700px !important;
+  margin: auto !important;
+}
+
+.templateFooter {
+  font-weight: 200 !important;
+  font-size: 1.13rem !important;
+}
+
+.confidenceNumber {
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+.badgeContainer {
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+}
+.badgeHeader {
+  font-size: 4.5rem !important;
+  font-weight: 600 !important;
+}
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.badgeImage {
+  width: 460px !important;
+  margin-left: 70px !important;
+}
+.eventCompletedOnText {
+  margin-top: -3rem !important;
+  font-size: 1.6rem !important;
+  font-weight: 850 !important;
+}
+.auditedDate {
+  margin-top: -0.5rem !important;
+  font-size: 2.4rem !important;
+  font-weight: 600 !important;
+}
+.eventNextScheduledFor {
+  margin-top: -0.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+.nextAuditDate {
+  margin-top: -0.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+.footerContainer {
+  height: 20vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  max-width: 700px !important;
+  margin: auto !important;
+}
+
+.templateFooter {
+  font-weight: 200 !important;
+  font-size: 1.5rem !important;
+}
+
+.confidenceNumber {
+  font-weight: 600 !important;
+  font-size: 2rem !important;
+}
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .badgeContainer {
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+}
+.badgeHeader {
+  font-size: 6rem !important;
+  font-weight: 600 !important;
+}
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.badgeImage {
+  width: 460px !important;
+  margin-left: 70px !important;
+
+}
+.eventCompletedOnText {
+  margin-top: -3rem !important;
+  font-size: 1.6rem !important;
+  font-weight: 850 !important;
+}
+.auditedDate {
+  margin-top: -0.5rem !important;
+  font-size: 2.4rem !important;
+  font-weight: 600 !important;
+}
+.eventNextScheduledFor {
+  margin-top: -0.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+.nextAuditDate {
+  margin-top: -0.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+.footerContainer {
+  height: 20vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  max-width: 700px !important;
+  margin: auto !important;
+}
+
+.templateFooter {
+  font-weight: 200 !important;
+  font-size: 1.5rem !important;
+}
+
+.confidenceNumber {
+  font-weight: 600 !important;
+  font-size: 2rem !important;
+}
+}
+@media (min-width: 1366px) {
+  .badgeContainer {
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+}
+.badgeHeader {
+  font-size: 6rem !important;
+  font-weight: 600 !important;
+}
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.badgeImage {
+  width: 460px !important;
+  margin-left: 70px !important;
+}
+.eventCompletedOnText {
+  margin-top: -3rem !important;
+  font-size: 1.6rem !important;
+  font-weight: 850 !important;
+}
+.auditedDate {
+  margin-top: -0.5rem !important;
+  font-size: 2.4rem !important;
+  font-weight: 600 !important;
+}
+.eventNextScheduledFor {
+  margin-top: -0.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+.nextAuditDate {
+  margin-top: -0.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+.footerContainer {
+  height: 20vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  max-width: 700px !important;
+  margin: auto !important;
+}
+
+.templateFooter {
+  font-weight: 200 !important;
+  font-size: 1.5rem !important;
+  margin: auto;
+}
+
+.confidenceNumber {
+  font-weight: 600 !important;
+  font-size: 2rem !important;
+}
+}

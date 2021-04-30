@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    // [
+    //   "i18next-extract",
+    //   {
+    //     "keyAsDefaultValue": [
+    //       "en-us"
+    //     ],
+    //     "nsSeparator": "~",
+    //     "keySeparator": "|",
+    //     "discardOldKeys": true,
+    //     "locales": [
+    //       "en-us"
+    //       // "es-es"
+    //     ]
+    //   }
+    // ],
+    "@babel/plugin-transform-runtime"
+  ]
+}

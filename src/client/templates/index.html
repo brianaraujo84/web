@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="fullscreen" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-yJpxAFV0Ip/w63YkZfDWDTU6re/Oc3ZiVqMa97pi8uPt92y0wzeK3UFM2yQRhEom" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="/assets/css/main.css" /> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/icons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#006ce0">
+  <meta name="apple-mobile-web-app-title" content="Confidence">
+  <meta name="application-name" content="Confidence">
+  <meta name="msapplication-TileColor" content="#006ce0">
+  <meta name="theme-color" content="#ffffff">
+  
+  <script>
+    window.GLOBAL_VARIABLES = {
+      logo: '<%- logo %>',
+      google_api_key: '<%- google_api_key %>',
+      ga_tracking_id: '<%- ga_tracking_id %>',
+      ga_ua_tracking_id: '<%- ga_ua_tracking_id %>',
+    };
+  </script>
+  <script id="language-translations-data" type="application/json">
+    <%- JSON.stringify(translations) %>
+  </script>
+  <script id="ss-store-data" type="application/json">
+    {
+      "profile": <%- JSON.stringify(userProfile) %>,
+      "locations": <%- JSON.stringify(userLocations) %>
+    }
+  </script>
+  <title></title>
+</head>
+
+<body>
+  <div id="react-container"></div>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%- google_api_key %>&libraries=places"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBTRJ8HY6H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', window.GLOBAL_VARIABLES.ga_tracking_id);
+    gtag('config', window.GLOBAL_VARIABLES.ga_ua_tracking_id);
+  </script>
+</body>
+
+</html>

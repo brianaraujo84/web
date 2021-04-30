@@ -1,0 +1,66 @@
+// Routes
+const URLS = {};
+
+URLS.HOME = '/';
+URLS.SIGNUP = '/signup';
+URLS.SIGNUP_TYPE = (phone, type) => `/signup/${phone}/${type}`;
+URLS.VERIFY_USER = (userId, verifyCode) => `/verify/${userId}/${verifyCode}`;
+URLS.FORGOT_PASSWORD = '/forgot-password';
+URLS.ADD_LOCATION = '/add-location';
+URLS.LOCATION_CONFIGURE_ZONES = (locationId) => `/location/configure/zones/${locationId}`;
+URLS.LOCATION = (locationId, filter = '') => `/location/${locationId}/${filter}`;
+URLS.LOCATION_RELOAD = (locationId) => `/location/${locationId}`;
+URLS.LOCATION_ASSIGNED_TO_YOU = (locationId, filter = '', taskId) => `/location-my/${locationId}${taskId ? `/${taskId}/${filter}` : `/${filter}`}`;
+URLS.LOCATION_COMMENTS = (locationId) => `/location/${locationId}/comments`;
+URLS.TASK_COMMENTS = (locationId, templateId, taskId) => `/location/${locationId}/comments/${templateId}/${taskId}`;
+URLS.TASK_TEMPLATES = (locationId) => `/location/${locationId}/templates`;
+URLS.TASK_TEMPLATE = (locationId, templateId) => `/location/${locationId}/templates/${templateId}`;
+URLS.TASK_DETAILS = (locationId, taskTemplateId, tm = '') => `/location/${locationId}/task/${taskTemplateId}${tm ? `/${tm}` : ''}`;
+URLS.TASK_DETAILS_RELOAD = (locationId, taskTemplateId, tm = '') => `/location/${locationId}/task/${taskTemplateId}${tm ? `/${tm}` : ''}/reload`;
+URLS.PRODUCT_DETAILS = (templateId) => `/marketplace/products/${templateId}`;
+URLS.LOGIN = (redirect = '') => `/login/${redirect}`;
+URLS.SUBSCRIPTION = '/subscription';
+URLS.TEAM_UPGRADE = '/team-upgrade';
+URLS.ACTIVATE = (step = '', id = '') => `/activate/${step}${id && '/' + id}`;
+URLS.WORKER_TASK_STATUS_MOBILE = (cardType, cardStatus, mobile, locationId, templateId, taskId, newUser = '') => `/worker/${cardType}/${cardStatus}/${mobile}/${locationId}/${templateId}/${taskId}/${newUser}`;
+URLS.WORKER_TASK_MOBILE = (cardType, mobile, locationId, templateId, taskId, newUser = '') => `/worker/${cardType}/${mobile}/${locationId}/${templateId}/${taskId}/${newUser}`;
+URLS.OWNER_TASK_MOBILE = (cardType, userName, locationId, templateId, taskId) => `/owner/${cardType}/${userName}/${locationId}/${templateId}/${taskId}`;
+URLS.BULK_NOTIFICATION_MOBILE = '/bulknotificaton';
+URLS.REVIEW_TASK = (userName, locationId, taskId) => `/owner/task/${userName}/${locationId}/${taskId}`;
+URLS.NOTIFY_OWNER_TASK_GRP = (locationId, cardType, taskId, templateId) => `/location-notify/${locationId}/${cardType}/${taskId}/${templateId}`;
+URLS.NOTIFY_MY_TASK_GRP = (locationId, cardType, taskId, templateId) => `/location-notify-my/${locationId}/${cardType}/${taskId}/${templateId}`;
+URLS.LOCATION_TASK_DETAILS = (locationId, cardType, taskId, templateId) => `/location/${locationId}/${cardType}/details/${taskId}/${templateId}`;
+URLS.NOTIFY_TASK_COMMENT = '/commentnotificaton/';
+URLS.PAGE_404 = '/404';
+URLS.PAGE_400 = '/400';
+URLS.PAGE_500 = '/500';
+URLS.LOCATIONS = '/locations';
+URLS.MESSAGES = '/messages';
+URLS.DIRECTORY = '/directory';
+URLS.ACCOUNT = '/account';
+URLS.VIRTUAL_DISPLAY = (deviceId) => `/tablet/virtual/${deviceId}`;
+URLS.DEVICES_CONNECTED = '/devices';
+URLS.DEVICES = '/devices-overview';
+URLS.ADD_DEVICE = '/add-device';
+URLS.SELECT_WORKSPACE = '/select-workspace';
+URLS.DEVICE_CONFIGURE = '/device-configure';
+URLS.ADD_VIRTUAL_DEVICE = (locationId) => `/add-virtual-device/${locationId}`;
+URLS.DEVICE_ACTIVATE = (deviceId) => `/device-activate/${deviceId}`;
+URLS.DEVICE_DETAILS = (deviceId) => `/device-details/${deviceId}`;
+URLS.DEVICES_LIST = (locationId) => `/devices-list/${locationId}`;
+URLS.DEVICE_CONFIGURE = '/device-configure';
+URLS.MARKETPLACE = '/marketplace';
+URLS.NEW_TEMPLATE = '/new-template';
+URLS.TEMPLATES = '/templates';
+URLS.TEMPLATE_TASKS = (templateId) => `/templates/template-tasks/${templateId}`;
+URLS.TEMPLATE_DETILAS = (templateId) => `/templates/${templateId}`;
+URLS.TRIAL_ENDED = '/trial-ended';
+URLS.BILLING = '/billing';
+// Images
+
+URLS.PROFILE_IMAGE = (username, ts) => `/api/files/user/${username}${ts ? `?${ts}` : ''}`;
+URLS.PROFILE_IMAGE_THUMB = (username, size = 4, ts) => `/api/files/user/${username}/thumb/${size}${ts ? `?${ts}` : ''}`;
+URLS.TEMPLATE_IMAGE = (templateId, taskId) => `/api/files/template/${templateId}/${taskId}`;
+URLS.TEMPLATE_IMAGE_THUMB = (templateId, taskId, size = 5) => `/api/files/template/${templateId}/${taskId}/${size}`;
+
+module.exports = URLS;
